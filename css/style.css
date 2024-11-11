@@ -198,7 +198,6 @@ padding:0 10px 0 10px;
     padding: 0 0 20px 0 ;
     width: var(--width-12col);
     margin:70px auto 0 auto;
-
     text-shadow: 1px 1px 1px var(--primary-color);
 }
 
@@ -461,13 +460,14 @@ padding:0 10px 0 10px;
   width: 350px;
   border-radius: 5px; /*rounds the edges */
   margin-left: 75%; /*horizontal position */
-  flex-direction: column; /* makes them aling above each other */
-  align-items: center;
+  flex-direction: column; /* makes them aling above each other */ 
+  align-content: center;
 }
 /*text inside the box */
 .cooking_block_content_top_text {
 font-weight: bold;
 padding-left: 15px;
+
 }
 
 .cooking_block_content_middle_text {
@@ -475,6 +475,7 @@ padding-left: 15px;
   color: #FF5C00;
   padding-left: 15px;
   margin: 10px 0 10px 0;
+  font-weight: bold;
 }
 
 .cooking_block_content_bottom_text {
@@ -489,6 +490,7 @@ padding-left: 15px;
   width: var(--width-12col);
   margin:70px auto 0 auto;
   text-shadow: 1px 1px 1px var(--primary-color);
+  padding-bottom: 200px;
 }
 
 .in_the_kicten_headline {  
@@ -577,22 +579,26 @@ footer{
   flex-direction: row; /* Align items horizontally */
   justify-content: space-between; /* Space between items (optional) */
   align-items: center; 
+  display: grid;
+  grid-template-columns: repeat(12,1f);
 }
 
 
 .social_media_box {
 padding-left: 30px;
+grid-column: 1;
 }
 
 .nav_footer_box {
-
+grid-column: 4;
 }
 
 .links_footer_box {
 text-align: right;
 padding-right: 30px;
-display: flex;
-flex-direction: column;
+display: flex; /*the links are above each other */
+flex-direction: column; /*the links are above each other */
+grid-column: 12;
 }
 
 .link_1{
@@ -832,13 +838,30 @@ padding-right: 10px;
  }
 
 
+ .instruction_recipes_headline {
+  height: 60px;
+  color:var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 20px 0 ;
+  width: var(--width-12col);
+  margin:70px auto 0 auto;
+  
+ }
+         
+
+
 
 
 
 
  
 /*  Explore page ------------------------------------------------------------------------------------------------------- */
-
 
 .hero-text_explore {
   grid-column: 1 / span 4;
@@ -864,6 +887,11 @@ font-size: small;
 .categories_explore_page {
   margin-top: 300px;
   margin-bottom: 300px;
+  background-image: url('/Foodbackgroundphoto.png');
+  background-size:cover;
+  min-height: 1200px;
+  background-repeat: no-repeat;
+  background-position: 20%;
 }
 
 .in_the_kitchen_popular_dishes {
