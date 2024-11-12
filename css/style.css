@@ -883,6 +883,8 @@ padding-right: 10px;
 
  
 /*  Explore page ------------------------------------------------------------------------------------------------------- */
+
+
 .hero_explore_page{
   margin-top: 90px;
   background-image: url('/boozeLentil.png');
@@ -952,13 +954,8 @@ font-size: small;
 
 
 .categories_explore_page {
-  margin-top: 300px;
-  margin-bottom: 300px;
-  background-image: url('/Foodbackgroundphoto.png');
-  background-size:cover;
-  min-height: 1200px;
-  background-repeat: no-repeat;
-  background-position: 20%;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .in_the_kitchen_popular_dishes {
@@ -976,7 +973,15 @@ font-size: small;
   text-transform: uppercase;
   padding: 0 0 20px 0 ;
   color: var(--background-color-light);
-  margin-top: -400px;
+  margin-top: 200px;
+}
+
+.section_for_background_photo{
+  background-image: url('/tomatoes-background.png');
+  background-size:contain;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: 100% 400px;
 }
 
 
