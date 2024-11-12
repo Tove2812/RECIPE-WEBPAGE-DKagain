@@ -101,7 +101,6 @@ padding:0 10px 0 10px;
 
 .hero {
     margin-top: -35px;
-
     width: var(--width-full);
     background-image: url('https://picsum.photos/1200/600');
     background-position: center center;
@@ -128,41 +127,46 @@ padding:0 10px 0 10px;
     margin-top: 200px;
 }
 
-.hero-text-small-header{
+.hero-text-small{
     font-size: 12px;
 }
 
-.hero-text-big-header{
+.hero-text-medium{
     font-size: 32px;
     text-transform: uppercase;
 }
 
-.hero-text-bold{
-    font-weight: 900;
+.hero-text-large{
+    font-weight: 800;
+    font-size: 45px;
 }
 
 .hero-search {
     grid-column: 2 / span 3;
     grid-row: 2 ;
     margin-top: 60px;
-}
-
-.search-box{
     background-color: transparent;
-    padding: 10px 40px 10px 20px;
-    border: var(--color-light) 1px solid; 
-    border-radius: 5px;
-    outline:none; 
-    color:var(--color-light);
+    border: 1px solid var(--background-color-light);
+    padding:8px 16px;
+    border-radius:5px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
-.search-box::placeholder{
-    color:var(--color-light);
+.search-input{
+  background-color: transparent;
+  border:transparent;
+
 }
+
 
 #searchicon {
-  color: #000000;
+  color: var(--background-color-light);
   font-size: 15px;
+}
+
+.hero-text-tiny {
+  grid-column: 2 / span 3;
 }
 
 
@@ -835,6 +839,8 @@ padding-right: 10px;
 .filler_block {
   height: 2000px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
  }
 
 
@@ -851,9 +857,24 @@ padding-right: 10px;
   padding: 0 0 20px 0 ;
   width: var(--width-12col);
   margin:70px auto 0 auto;
-  
  }
          
+ 
+
+.instruction_recipe_top {
+  color: var(--background-color-light);
+  list-style-type: decimal;
+  padding-left: 50px;
+  max-width: 50%;
+}
+
+.ingredients_recipe_top {
+  color: var(--background-color-light);
+  list-style-type: disc;
+  max-width: 50%;
+}
+
+
 
 
 
@@ -862,12 +883,23 @@ padding-right: 10px;
 
  
 /*  Explore page ------------------------------------------------------------------------------------------------------- */
+.hero_explore_page{
+  margin-top: 90px;
+  background-image: url('/boozeLentil.png');
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-position: 80%;
+}
+
+
 
 .hero-text_explore {
   grid-column: 1 / span 4;
   grid-row: 1 ;
   margin-top: 200px;
   font-size: larger;
+  color: var(--background-color-light);
+  
 }
 
 .hero-text-smallest_explore {
@@ -882,6 +914,41 @@ font-size: small;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+
+
+/*Buttons*/
+
+.recipe_details_explore_block_buttons {
+  display: flex;
+  margin: 250px 0 0 300px;
+  
+}
+
+.recipe_details_explore_block_buttons button {
+ background-color: transparent;
+ color: var(--background-color-light);
+ border: 1px solid var(--background-color-light);
+ padding: 10px 20px;
+ border-radius: 5px;
+ margin: 0 10px 0 0;
+ font-size: 12px;
+ text-transform: uppercase;
+}
+
+.recipe_details_explore_block_buttons button a {
+  color: var(--background-color-light);
+  text-decoration: none;
+}
+
+.recipe_details_explore_block_buttons button:hover i {
+  color: var(--primary-color);
+}
+
+
+/*Button end*/
+
+
 
 
 .categories_explore_page {
@@ -909,6 +976,7 @@ font-size: small;
   text-transform: uppercase;
   padding: 0 0 20px 0 ;
   color: var(--background-color-light);
+  margin-top: -400px;
 }
 
 
