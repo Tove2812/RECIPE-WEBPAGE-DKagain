@@ -890,7 +890,7 @@ padding-right: 10px;
   background-image: url('/boozeLentil.png');
   background-repeat: no-repeat;
   min-height: 500px;
-  background-position: 80%;
+  background-position: 80%; /*flytter den til højre side*/
 }
 
 
@@ -921,10 +921,15 @@ font-size: small;
 
 /*Buttons*/
 
+.container_for_buttoms_explore{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
 .recipe_details_explore_block_buttons {
-  display: flex;
-  margin: 250px 0 0 300px;
-  
+  margin: 250px 0 0 0;
+  grid-column: 3/7;
 }
 
 .recipe_details_explore_block_buttons button {
