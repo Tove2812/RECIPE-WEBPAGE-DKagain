@@ -838,7 +838,7 @@ padding-right: 10px;
 
 
 .filler_block {
-  height: 600px;
+  height: 900px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -861,10 +861,12 @@ padding-right: 10px;
          
  
 /*instruction top*/
-.instruction_recipe_top {
+.instruction_recipe_top li{
   color: var(--background-color-light);
   list-style-type: decimal;
   padding-left: 50px;
+  margin-top: 20px;
+  line-height: 25px;
 }
 
 .instruction_top_box{
@@ -873,9 +875,10 @@ padding-right: 10px;
 }
 
 /*ingredients top*/
-.ingredients_recipe_top {
+.ingredients_recipe_top li {
   color: var(--background-color-light);
   list-style-type: disc;
+  margin-top: 5px;
 }
 
 .ingredients_top_box{
