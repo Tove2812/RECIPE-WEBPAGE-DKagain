@@ -886,6 +886,29 @@ padding-right: 10px;
   grid-column: 9/11;
 }
 
+.instruction_recipe_bottom {
+  color: var(--background-color-light);
+  padding-left: 50px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+/* the steps */
+
+.container_step_instruction_text{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+.step_instruction_text {
+  color: var(--category-pasta);
+  transform: rotate(-90deg); /*makes them turn on the side*/
+  grid-column: 2/5;
+  display: flex; /*puttijg them on one line */
+  white-space: nowrap; /* help from chatgpt; makes puts it on the line again */
+}
+
 
 
 
