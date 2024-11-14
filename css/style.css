@@ -834,11 +834,11 @@ padding-right: 10px;
 
 }
 
-/* filler to fake rest of page */
+/* filler  */
 
 
 .filler_block {
-  height: 900px;
+  height: 1000px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -886,28 +886,100 @@ padding-right: 10px;
   grid-column: 9/11;
 }
 
-.instruction_recipe_bottom {
-  color: var(--background-color-light);
-  padding-left: 50px;
-  margin-top: 20px;
-  line-height: 25px;
-}
 
-/* the steps */
+
+/* the steps  on pause*/
 
 .container_step_instruction_text{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  height: 300px;
+  width: 100%;
+  /*display: grid;
+  grid-template-columns: repeat(12, 1fr);*/
+  display: flex;
 }
 
 
 .step_instruction_text {
   color: var(--category-pasta);
   transform: rotate(-90deg); /*makes them turn on the side*/
-  grid-column: 2/5;
   display: flex; /*puttijg them on one line */
   white-space: nowrap; /* help from chatgpt; makes puts it on the line again */
+  gap: 20px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+.instruction_recipes_headline_two {
+  height: 60px;
+  color:var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 0 20px 0 ;
+  width: var(--width-12col);
+  margin:70px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
+
+.filler_block_two {
+  height: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.instruction_bottom_box {
+  padding-top: 30px;
+  grid-column: 3/7;
+}
+
+.instruction_recipe_bottom {
+  color: var(--background-color-light);
+  padding-left: 50px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.instruction_recipe_bottom li {
+  list-style: none;
+}
+
+.ingredients_bottom_box{
+  padding-top: 30px;
+  grid-column: 9/12;
+}
+
+.ingredients_recipe_bottom li {
+  color: var(--background-color-light);
+  list-style-type: disc;
+  margin-top: 5px;
+}
+
+.step_box_bottom_container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+.step_box_bottom {
+  color: var(--category-pasta);
+  list-style: none;
+  transform: rotate(-90deg);
+  display: flex; /*puttijg them on one line */
+  white-space: nowrap; /* help from chatgpt; makes puts it on the line again */
+  grid-column: 2/3;
+}
+    
 
 
 
