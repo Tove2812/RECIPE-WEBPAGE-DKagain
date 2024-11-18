@@ -452,7 +452,7 @@ padding:0 10px 0 10px;
   width: var(--width-full);
   height: 600px;
   padding-top: 100px;
-  object-fit: cover; /* Keeps the aspect ratio while covering */
+  object-fit: cover; /* coverier the page */
   clip-path: polygon(0 20%, 100% 41%, 100% 100%, 0% 100%);
   
 }
@@ -460,7 +460,7 @@ padding:0 10px 0 10px;
 /* Text box on top of picture */
 .cooking_block_content{
   position: absolute;
-  bottom: -1000px; /*moves it verticaly */
+  bottom: -800px; /*moves it verticaly */
   right: 50px; /*moves it horizontaly */
   background-color: var(--background-color-light);
   height: 150px;
@@ -470,6 +470,7 @@ padding:0 10px 0 10px;
   flex-direction: column; /* makes them aling above each other */ 
   align-content: center;
 }
+
 /*text inside the box */
 .cooking_block_content_top_text {
 font-weight: bold;
@@ -1123,6 +1124,10 @@ font-size: small;
 
 @media (max-width:600px) {
 
+  .menu-container{
+    margin: 0 auto 0 30px;
+}
+
 
   .todays_recipes_content {
     display: grid;
@@ -1147,17 +1152,42 @@ font-size: small;
     width: 100%;
 }
 
-.in_the_kitchen_1 {
-  display: flex;
-  flex-wrap: wrap;
+.cooking_block_content {
+  display: none;
+}
+
+.in_the_kitchen{
   width: 600px;
 }
+
+.in_the_kitchen_1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-height: fit-content;
+  margin-right: auto;
+}
+
+.in_the_kitchen_1 img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.txt-box{
+  padding-left: 20px;
+}
+
+
+
 
 
 
 /*Her starter Explore side*/
 
-
+.recipe_details_explore_block_buttons {
+  margin: 250px 0 0 0;
+  grid-column: 1/2;
+}
 
 
 
@@ -1184,8 +1214,11 @@ font-size: small;
 
 
 
-
 }
+
+
+
+
 
 
 
