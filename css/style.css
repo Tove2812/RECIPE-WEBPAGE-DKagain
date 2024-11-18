@@ -252,6 +252,7 @@ padding:0 10px 0 10px;
     margin:20px 0 0 0;
     
   }
+
   /* refactor later start*/
   .todays_recipes_content_block_bottom_area_left {
     display:flex;
@@ -410,11 +411,11 @@ padding:0 10px 0 10px;
 /* Align the icons*/
 .categories_content_block {
   display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
-    text-align: center; 
-    height: 100%; 
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  text-align: center; 
+  height: 100%; 
 }
 
 /* Color of the category text*/
@@ -473,7 +474,6 @@ padding:0 10px 0 10px;
 .cooking_block_content_top_text {
 font-weight: bold;
 padding-left: 15px;
-
 }
 
 .cooking_block_content_middle_text {
@@ -575,15 +575,15 @@ padding-left: 15px;
   font-weight: lighter;
 }
 
-/*footer start*/
+/*footer starts*/
 
 footer{
   background-color: #BF5B23;
   height: 150px;
   width: var(--width-full);
-  display: flex; /* Enable Flexbox */
-  flex-direction: row; /* Align items horizontally */
-  justify-content: space-between; /* Space between items (optional) */
+  display: flex; /* Make Flexbox */
+  flex-direction: row; /* Align the items horizontal */
+  justify-content: space-between; /* Space between them */
   align-items: center; 
   display: grid;
   grid-template-columns: repeat(12,1f);
@@ -1109,6 +1109,84 @@ font-size: small;
   color: var(--background-color-light);
   margin-top: 250px;
   text-shadow: 1px 1px 1px var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+/*her starter responsive----------------------------------------------------------------------------------------------*/
+
+@media (max-width:600px) {
+
+  .todays_recipes_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--grid-gap);
+    height: fit-content;
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+    width: var(--width-12col);
+}
+
+.todays_recipes_content_block_bottom_area {
+  display: flex;
+  justify-content:space-between ;
+  margin:20px 650px 0 0;
+  
+}
+
+.cooking_block_content{
+  display: none;
+}
+
+  .categories_content {
+    height: 90px;
+    width: 100%;
+}
+
+.in_the_kitchen_1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+
+
+/*Her starter Explore side*/
+
+
+
+
+
+/*Footer*/
+.social_media_box {
+ 
+  font-size: smaller;
+  }
+
+  .nav_footer_box {
+  
+  font-size: smaller;
+  }
+
+  .white_line_box{
+   
+    grid-column: 10;
+    }
+  
+  .links_footer_box {
+    
+    font-size: smaller;
+    }
+
+
+
+
 }
 
 
