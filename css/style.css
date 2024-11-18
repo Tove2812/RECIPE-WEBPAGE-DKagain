@@ -457,7 +457,7 @@ padding:0 10px 0 10px;
 /* Text box on top of picture */
 .cooking_block_content{
   position: absolute;
-  bottom: -900px; /*moves it verticaly */
+  bottom: -800px; /*moves it verticaly */
   right: 50px; /*moves it horizontaly */
   background-color: var(--background-color-light);
   height: 150px;
@@ -1093,18 +1093,7 @@ font-size: small;
   margin-top: 250px;
   text-shadow: 1px 1px 1px var(--primary-color);
 }
-/*hjælp fra kristian*/
-.section_for_background_photo{
-  background-image: url('/tomatoes-background.png');
-  background-size:cover;
-  height: 600px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: 600px;
-  position:absolute;
-  z-index: -1;
-}
+
 
 
 
