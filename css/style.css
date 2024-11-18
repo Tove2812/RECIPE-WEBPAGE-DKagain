@@ -1123,26 +1123,24 @@ font-size: small;
 
 @media (max-width:600px) {
 
+
   .todays_recipes_content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: var(--grid-gap);
     height: fit-content;
-    margin: 30px auto 0 auto;
+    margin-right: auto;
+    margin-left: 30px;
     box-sizing: border-box;
-    width: var(--width-12col);
+    width: fit-content;
 }
 
 .todays_recipes_content_block_bottom_area {
   display: flex;
   justify-content:space-between ;
-  margin:20px 650px 0 0;
+  margin:20px 0 0 0;
   
 }
 
-.cooking_block_content{
-  display: none;
-}
 
   .categories_content {
     height: 90px;
