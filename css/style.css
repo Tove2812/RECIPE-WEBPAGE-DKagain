@@ -594,16 +594,19 @@ footer{
 .social_media_box {
 padding-left: 30px;
 grid-column: 1;
+padding-top: 50px;
 }
 
 .nav_footer_box {
 grid-column: 4;
+padding-top: 50px;
 }
 
 .white_line_box{
 color: var(--background-color-light);
 transform: rotate(90deg);
 grid-column: 9;
+padding-top: 50px;
 }
 
 .links_footer_box {
@@ -612,6 +615,7 @@ padding-right: 30px;
 display: flex; /*the links are above each other */
 flex-direction: column; /*the links are above each other */
 grid-column: 12;
+padding-top: 50px;
 }
 
 .link_1{
