@@ -1161,7 +1161,7 @@ font-size: small;
 }
 
 .in_the_kitchen{
-  width: 600px;
+  width: var(--width-full);
 }
 
 .in_the_kitchen_1 {
@@ -1175,6 +1175,10 @@ font-size: small;
   height: 100%;
   width: 100%;
 
+}
+
+.in_the_kitchen_boxes{
+  flex-wrap: wrap;
 }
 
 .txt-box{
