@@ -1220,23 +1220,34 @@ font-size: small;
   /*headline ændringer */ 
 
   .instruction_recipes_headline {
-    width: var(--width-full)
+    width: var(--width-full);
+    border-bottom: none;
   }
 
+  
   .in_the_kicten_headline{
     width: var(--width-full);
+    border-bottom: none;
   }
 
   .instruction_recipes_headline{
     width: var(--width-full);
+    border-bottom: none;
   }
 
   .instruction_recipes_headline_two{
     width: var(--width-full);
+    border-bottom: none;
   }
 
   .in_the_kitchen_popular_dishes_headline {
     width: var(--width-full);
+    border-bottom: none;
+  }
+
+  .todays_recipes_headline {
+    width: var(--width-full);
+    border-bottom: none;
   }
 
 
