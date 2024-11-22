@@ -1217,6 +1217,29 @@ font-size: small;
     }
 
 
+  /*headline ændringer */ 
+
+  .instruction_recipes_headline {
+    width: var(--width-full)
+  }
+
+  .in_the_kicten_headline{
+    width: var(--width-full);
+  }
+
+  .instruction_recipes_headline{
+    width: var(--width-full);
+  }
+
+  .instruction_recipes_headline_two{
+    width: var(--width-full);
+  }
+
+  .in_the_kitchen_popular_dishes_headline {
+    width: var(--width-full);
+  }
+
+
 
 }
 
